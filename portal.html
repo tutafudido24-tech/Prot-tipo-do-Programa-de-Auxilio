@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integra PCD | Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="brand-mini">
+        <div class="brand-badge" aria-hidden="true">IP</div>
+        <div>
+          <strong>Integra PCD</strong><br>
+          Portal do cidadão com acessibilidade
+        </div>
+      </div>
+      <div class="toolbar-actions" aria-label="Controles de acessibilidade">
+        <button class="toolbar-button" data-action="font-down" type="button">A-</button>
+        <button class="toolbar-button" data-action="font-reset" type="button">Fonte <span data-font-readout>100%</span></button>
+        <button class="toolbar-button" data-action="font-up" type="button">A+</button>
+        <button class="toolbar-button" data-action="toggle-contrast" type="button" aria-pressed="false">Alto contraste</button>
+        <button class="toolbar-button" data-action="toggle-reading" type="button" aria-pressed="false">🙂 Leitura fácil</button>
+        <button class="toolbar-button" data-action="speak-page" type="button" aria-pressed="false">🔊 Ouvir página</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link" data-nav href="index.html">Visão geral</a>
+      <a class="nav-link" data-nav href="fluxo.html">Fluxo do serviço</a>
+      <a class="nav-link" data-nav href="cartilha.html">Cartilha</a>
+      <a class="nav-link" data-nav href="portal.html">Portal</a>
+      <a class="nav-link" data-nav href="app.html">Aplicativo</a>
+      <a class="nav-link" data-nav href="central.html">Central integrada</a>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">💻 Entrega 3 • Portal</span>
+      <h1 class="page-title">Portal Integra PCD</h1>
+      <p class="page-intro">
+        Esta tela simula a página principal do portal, onde o cidadão encontra serviços,
+        acompanha protocolos, agenda atendimentos e acessa informações em linguagem simples.
+      </p>
+      <div class="button-row">
+        <a class="button-primary" href="#servicos">🧩 Serviços principais</a>
+        <a class="button-secondary" href="#area-cidadao">👤 Área do cidadão</a>
+      </div>
+    </section>
+
+    <section class="section-block" id="servicos">
+      <div class="section-heading">
+        <div>
+          <h2>Serviços em destaque</h2>
+          <p>Itens que apareceriam já na primeira tela para reduzir esforço do usuário.</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">📅</div>
+          <h3>📅 Agendar atendimento</h3>
+          <p>Solicita consulta, triagem social ou orientação presencial com prioridade definida pelo sistema.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🚌</div>
+          <h3>🚌 Transporte acessível</h3>
+          <p>Pedido de transporte adaptado para exames, atendimentos, escola ou eventos públicos.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🤟</div>
+          <h3>🤟 Apoio em Libras</h3>
+          <p>Solicitação de intérprete para serviços municipais agendados ou atendimentos importantes.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🗺️</div>
+          <h3>🗺️ Mapa acessível</h3>
+          <p>Locais com rampa, banheiros adaptados, piso tátil e serviços públicos com atendimento inclusivo.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">📄</div>
+          <h3>📄 Documentos e benefícios</h3>
+          <p>Orientações sobre cadastro, direitos, isenções, benefícios e documentos aceitos.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">💬</div>
+          <h3>💬 Falar com a central</h3>
+          <p>Canal direto com a equipe da Central Integrada para tirar dúvidas e resolver pendências.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="area-cidadao">
+      <div class="dashboard-grid">
+        <article class="dashboard-card highlight">
+          <span class="ribbon">Área do cidadão</span>
+          <h3>Painel de acompanhamento</h3>
+          <p>Ambiente em que a pessoa visualiza o andamento das demandas e recebe orientações personalizadas.</p>
+          <div class="queue-list">
+            <div class="queue-item is-green">
+              <span class="queue-dot is-green"></span>
+              <div>
+                <strong>✅ Protocolo #10482</strong>
+                Transporte acessível confirmado para 24/06 às 07h30.
+              </div>
+              <span class="status-badge is-green">✅ Concluído</span>
+            </div>
+            <div class="queue-item is-gold">
+              <span class="queue-dot is-gold"></span>
+              <div>
+                <strong>🟡 Protocolo #10497</strong>
+                Triagem social em análise com retorno previsto para amanhã.
+              </div>
+              <span class="status-badge is-gold">🟡 Em análise</span>
+            </div>
+            <div class="queue-item is-red">
+              <span class="queue-dot"></span>
+              <div>
+                <strong>⚠️ Protocolo #10511</strong>
+                Pedido de intérprete de Libras aguardando confirmação do setor.
+              </div>
+              <span class="status-badge is-red">⚠️ Pendente</span>
+            </div>
+          </div>
+        </article>
+        <aside class="panel-grid">
+          <article class="dashboard-card">
+            <h3>🙂 Preferências de acessibilidade</h3>
+            <p>Contraste, tamanho da fonte, linguagem simples e canal favorito ficam salvos no perfil.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>📂 Documentos já enviados</h3>
+            <p>O cidadão evita reenviar arquivos a cada solicitação, reduzindo burocracia.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>📅 Próximos compromissos</h3>
+            <p>Resumo de consultas, entrevistas, visitas técnicas e vistorias acessíveis.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>🚨 Canal rápido</h3>
+            <p>Botão de ajuda para falar com a central, relatar barreiras ou pedir apoio urgente.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="two-column">
+        <article class="section-card">
+          <span class="ribbon">Acessibilidade digital</span>
+          <h2>Princípios do portal</h2>
+          <ul>
+            <li>🙂 Textos curtos e objetivos.</li>
+            <li>🧭 Menus claros e poucas etapas por tarefa.</li>
+            <li>⌨️ Compatibilidade com teclado e leitores de tela.</li>
+            <li>🟡✅⚠️ Status visíveis com palavra, ícone e cor ao mesmo tempo.</li>
+          </ul>
+        </article>
+        <article class="section-card">
+          <span class="ribbon">Valor público</span>
+          <h2>Benefícios esperados</h2>
+          <ul>
+            <li>Menos filas presenciais e menos retrabalho.</li>
+            <li>Maior autonomia do cidadão para acompanhar sua demanda.</li>
+            <li>Mais controle de prazos pela gestão municipal.</li>
+            <li>Registro de dados para planejamento de políticas públicas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>Protótipo de portal navegável para demonstração acadêmica.</div>
+      <div class="footer-links">
+        <a href="app.html">Ver aplicativo</a>
+        <a href="central.html">Ver central</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

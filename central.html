@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integra PCD | Central Integrada de Acessibilidade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="brand-mini">
+        <div class="brand-badge" aria-hidden="true">IP</div>
+        <div>
+          <strong>Integra PCD</strong><br>
+          Central Integrada de Acessibilidade
+        </div>
+      </div>
+      <div class="toolbar-actions" aria-label="Controles de acessibilidade">
+        <button class="toolbar-button" data-action="font-down" type="button">A-</button>
+        <button class="toolbar-button" data-action="font-reset" type="button">Fonte <span data-font-readout>100%</span></button>
+        <button class="toolbar-button" data-action="font-up" type="button">A+</button>
+        <button class="toolbar-button" data-action="toggle-contrast" type="button" aria-pressed="false">Alto contraste</button>
+        <button class="toolbar-button" data-action="toggle-reading" type="button" aria-pressed="false">🙂 Leitura fácil</button>
+        <button class="toolbar-button" data-action="speak-page" type="button" aria-pressed="false">🔊 Ouvir página</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link" data-nav href="index.html">Visão geral</a>
+      <a class="nav-link" data-nav href="fluxo.html">Fluxo do serviço</a>
+      <a class="nav-link" data-nav href="cartilha.html">Cartilha</a>
+      <a class="nav-link" data-nav href="portal.html">Portal</a>
+      <a class="nav-link" data-nav href="app.html">Aplicativo</a>
+      <a class="nav-link" data-nav href="central.html">Central integrada</a>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">🎛️ Entrega 5 • Central Integrada de Acessibilidade</span>
+      <h1 class="page-title">Painel da equipe municipal para coordenar todo o programa</h1>
+      <p class="page-intro">
+        A Central Integrada é o coração operacional do Integra PCD. Ela concentra atendimentos,
+        organiza prioridades, monitora prazos e conecta as secretarias envolvidas no cuidado.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <div class="dashboard-grid">
+        <article class="dashboard-card highlight">
+          <span class="ribbon">Painel operacional</span>
+          <h3>Fila e priorização de demandas</h3>
+          <p>Visão rápida do que precisa de ação imediata, do que está em andamento e do que já foi resolvido.</p>
+          <div class="queue-list">
+            <div class="queue-item is-red">
+              <span class="queue-dot"></span>
+              <div>
+                <strong>🚨 Urgente • Transporte para exame</strong>
+                Usuário com mobilidade reduzida precisa de retorno até 18h.
+              </div>
+              <span class="status-badge is-red">🚨 Prioridade alta</span>
+            </div>
+            <div class="queue-item is-gold">
+              <span class="queue-dot is-gold"></span>
+              <div>
+                <strong>🟡 Em análise • Intérprete de Libras</strong>
+                Atendimento escolar agendado para a próxima semana.
+              </div>
+              <span class="status-badge is-gold">🟡 Coordenação</span>
+            </div>
+            <div class="queue-item is-green">
+              <span class="queue-dot is-green"></span>
+              <div>
+                <strong>✅ Concluído • Encaminhamento social</strong>
+                Protocolo encerrado com confirmação do usuário.
+              </div>
+              <span class="status-badge is-green">✅ Finalizado</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="panel-grid">
+          <article class="dashboard-card">
+            <h3>📅 Atendimentos do dia</h3>
+            <p>42 demandas registradas, 18 concluídas, 12 em triagem e 12 em execução.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>⏱️ Tempo médio de resposta</h3>
+            <p>Meta conceitual de até 72h para devolutiva inicial e 24h em casos prioritários.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>🏛️ Setores acionados</h3>
+            <p>Saúde, assistência social, mobilidade, educação, trabalho e habitação.</p>
+          </article>
+          <article class="dashboard-card">
+            <h3>📡 Canais ativos</h3>
+            <p>Portal, aplicativo, WhatsApp, telefone, e balcões presenciais.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="three-column">
+        <article class="section-card">
+          <h3>🧭 Função da central</h3>
+          <ul>
+            <li>Receber demandas de todos os canais.</li>
+            <li>Classificar urgência e complexidade.</li>
+            <li>Distribuir tarefas entre os setores responsáveis.</li>
+            <li>Monitorar retorno ao cidadão.</li>
+          </ul>
+        </article>
+        <article class="section-card">
+          <h3>👥 Equipe ideal</h3>
+          <ul>
+            <li>Atendentes capacitados em linguagem inclusiva.</li>
+            <li>Apoio técnico social e de saúde.</li>
+            <li>Intérprete ou mediação em Libras.</li>
+            <li>Coordenação de integração entre secretarias.</li>
+          </ul>
+        </article>
+        <article class="section-card">
+          <h3>📈 Resultados esperados</h3>
+          <ul>
+            <li>Mais agilidade e menos desencontro entre setores.</li>
+            <li>Maior confiança da população no atendimento público.</li>
+            <li>Dados reais para políticas públicas mais eficazes.</li>
+            <li>Visibilidade de gargalos e oportunidades de melhoria.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="two-column">
+        <article class="feature-panel">
+          <h3>🔗 Integração entre secretarias</h3>
+          <p>
+            Em vez de trabalhar de forma isolada, os setores passam a compartilhar o mesmo protocolo,
+            o mesmo histórico e a mesma meta de resolutividade.
+          </p>
+        </article>
+        <article class="feature-panel">
+          <h3>📊 Gestão com indicadores</h3>
+          <p>
+            O painel permite medir volume de demandas, tempo médio de retorno, causas mais frequentes
+            e pontos do município com maiores barreiras de acessibilidade.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>Central integrada proposta como núcleo operacional do serviço municipal.</div>
+      <div class="footer-links">
+        <a href="fluxo.html">Ver fluxo</a>
+        <a href="index.html">Voltar à capa</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
